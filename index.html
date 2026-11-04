@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pratanda: periksa dulu sebelum percaya</title>
+<meta name="description" content="Periksa rekening, nomor telepon, toko online, tautan, dan pesan penjual sekaligus. Kenali risikonya, sebelum bertransaksi.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pratanda: periksa dulu sebelum percaya">
+<meta property="og:description" content="Satu tempat untuk memeriksa rekening, nomor, toko, tautan, dan pesan sebelum Anda transfer.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 32'%3E%3Cg fill='none' stroke='%2343C5C9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 27V5h8.5a6.5 6.5 0 010 13H8' stroke-width='3.4'/%3E%3Cpath d='M26.5 8.5c1.5 2.2 1.5 4.8 0 7M30.5 5.5c2.7 3.8 2.7 9.2 0 13' stroke-width='2.6'/%3E%3C/g%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF5F5;--sf:#fff;--ink:#0B191D;--mut:#476168;--ln:#CFE0E2;--br:#0B7A80;--bi:#fff;--ok:#1B7F55;--wn:#9A6700;--bd:#B3261E;--okb:#E4F4EC;--wnb:#FFF3D6;--bdb:#FBE4E1;--scr:#0B191D;--glow:#43C5C9;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B191D;--sf:#142A30;--ink:#E7F1F2;--mut:#8DAEB4;--ln:#25444B;--br:#43C5C9;--bi:#06262A;--ok:#4CC38A;--wn:#E8AD54;--bd:#FF7A70;--okb:#12362C;--wnb:#3A2F16;--bdb:#3F1F1F;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0B191D;--sf:#142A30;--ink:#E7F1F2;--mut:#8DAEB4;--ln:#25444B;--br:#43C5C9;--bi:#06262A;--ok:#4CC38A;--wn:#E8AD54;--bd:#FF7A70;--okb:#12362C;--wnb:#3A2F16;--bdb:#3F1F1F;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif}
+.w{max-width:980px;margin:auto;padding:0 20px}
+.ic{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{display:flex;gap:10px;align-items:center;font-weight:800;font-size:1.3rem;color:var(--ink);text-decoration:none}
+.brand svg{width:36px;height:34px;color:var(--br)}
+nav{display:flex;align-items:center}
+nav a{color:var(--mut);text-decoration:none;margin-left:20px;font-size:.95rem}
+nav a:hover{color:var(--ink)}
+.tg{margin-left:16px;width:38px;height:38px;border-radius:10px;border:1px solid var(--ln);background:none;color:var(--ink);display:grid;place-items:center;cursor:pointer}
+.hero{display:grid;grid-template-columns:1fr 250px;gap:24px;align-items:center;margin-bottom:26px}
+h1{font-size:clamp(2rem,5.2vw,3.3rem);line-height:1.05;letter-spacing:-.025em;margin:14px 0;max-width:18ch;font-weight:800}
+h2{font-size:1.7rem;letter-spacing:-.02em;margin:0 0 8px;line-height:1.15}
+p{margin:0 0 10px}
+.mut{color:var(--mut)}
+.lead{color:var(--mut);font-size:1.1rem;max-width:54ch;margin:0}
+.mw{display:flex;flex-direction:column;align-items:center;gap:16px}
+.m1{width:170px}
+.say{position:relative;background:var(--sf);border:1px solid var(--ln);border-radius:14px;padding:12px 14px;font-size:.92rem;max-width:250px;min-height:48px}
+.say::after{content:"";position:absolute;left:50%;bottom:-7px;width:12px;height:12px;background:var(--sf);border:solid var(--ln);border-width:0 1px 1px 0;transform:translateX(-50%) rotate(45deg)}
+.mas{width:100%;height:auto;display:block;overflow:visible}
+.mas .rg{fill:none;stroke:var(--st,var(--br));stroke-opacity:.35;stroke-width:2}
+.mas .bd0{fill:var(--sf);stroke:var(--st,var(--br));stroke-width:3.5}
+.mas .an{stroke:var(--st,var(--br));stroke-width:3;stroke-linecap:round}
+.mas .led{fill:var(--st,var(--br))}
+.mas .scr{fill:var(--scr)}
+.mas .e{fill:var(--glow);transform-box:fill-box;transform-origin:center;transition:transform .2s}
+.mas .eyes{transform:translate(var(--ex,0px),var(--ey,0px));transition:transform .15s}
+.mas .eye{transform-box:fill-box;transform-origin:center;animation:bl 5.5s infinite}
+.mas .brow{fill:none;stroke:var(--glow);stroke-width:3;stroke-linecap:round;opacity:0}
+.mas .mo{fill:none;stroke:var(--glow);stroke-width:3.2;stroke-linecap:round}
+.mas .sw{transform-origin:60px 64px;opacity:0}
+.mas .sw path{fill:var(--br);fill-opacity:.25}
+.s-type .eyes{transform:translate(0,4px)}
+.s-scan .sw{opacity:1;animation:sp 1s linear infinite}
+.s-scan .e{transform:scaleY(.55)}
+.s-ok{--st:var(--ok)}.s-ok .e{transform:scaleY(.8)}
+.s-warn{--st:var(--wn)}
+.s-bad{--st:var(--bd);animation:shk .5s}
+.s-warn .brow,.s-bad .brow{opacity:1}
+@keyframes bl{0%,95%,100%{transform:scaleY(1)}97%{transform:scaleY(.1)}}
+@keyframes sp{to{transform:rotate(360deg)}}
+@keyframes shk{25%{transform:translateX(-4px)}50%{transform:translateX(4px)}75%{transform:translateX(-2px)}}
+.panel{background:var(--sf);border:1px solid var(--ln);border-radius:16px;overflow:hidden}
+.tabs{display:flex;gap:2px;overflow-x:auto;border-bottom:1px solid var(--ln);padding:6px 10px 0}
+.tabs button{display:flex;align-items:center;gap:8px;background:none;border:0;border-bottom:3px solid transparent;color:var(--mut);font:inherit;font-weight:600;padding:12px 14px;cursor:pointer;white-space:nowrap}
+.tabs button[aria-selected=true]{color:var(--br);border-color:var(--br)}
+form{padding:20px}
+label{display:flex;align-items:center;gap:8px;font-weight:600;margin-bottom:6px}
+label .ic{color:var(--br)}
+input,select,textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--ln);border-radius:10px;padding:13px 14px}
+textarea{min-height:92px;resize:vertical}
+:focus-visible{outline:3px solid var(--br);outline-offset:2px}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.full{grid-column:1/-1}
+.bn{display:grid;grid-template-columns:150px 1fr;gap:8px}
+.dt{margin-top:16px;border:1px dashed var(--ln);border-radius:10px;padding:10px 14px}
+.dt summary{cursor:pointer;font-weight:600}
+.chk{display:grid;gap:8px;margin-top:12px}
+.chk label,.mt label{display:flex;gap:10px;align-items:flex-start;font-weight:400;margin:0;cursor:pointer}
+.chk input,.mt input{width:auto;margin-top:5px}
+.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:18px}
+.go,.gh{border-radius:10px;font:inherit;font-weight:700;padding:12px 20px;cursor:pointer;width:auto}
+.go{background:var(--br);color:var(--bi);border:0}
+.gh{background:none;color:var(--br);border:1px solid var(--ln)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;align-items:center;color:var(--mut);font-size:.9rem}
+.chips button{border:1px solid var(--ln);background:none;color:var(--ink);border-radius:999px;padding:5px 12px;font:inherit;font-size:.88rem;cursor:pointer}
+.chips button:hover{border-color:var(--br)}
+.note{color:var(--mut);font-size:.86rem;margin:14px 0 0}
+#out:not(:empty){border-top:1px solid var(--ln);padding:22px 20px 26px}
+.rh{display:flex;gap:16px;align-items:center}
+.rh .mas{width:76px}
+.lv{font-size:1.7rem;font-weight:800;letter-spacing:-.01em;margin:0;line-height:1.2}
+.lv.ok,.chip.ok,.bd2.ok{color:var(--ok)}.lv.warn,.chip.warn,.bd2.warn{color:var(--wn)}.lv.bad,.chip.bad,.bd2.bad{color:var(--bd)}
+.bar{height:10px;border-radius:9px;background:linear-gradient(90deg,var(--ok),var(--wn) 55%,var(--bd));position:relative;margin:30px 0 8px}
+.bar i{position:absolute;top:-9px;left:0;width:6px;height:28px;margin-left:-3px;border-radius:3px;background:var(--ink);box-shadow:0 0 0 3px var(--sf);transition:left .9s cubic-bezier(.2,.8,.2,1)}
+.ends{display:flex;justify-content:space-between;color:var(--mut);font-size:.82rem}
+.ph{display:flex;align-items:center;gap:10px;margin:26px 0 10px;font-size:1.1rem}
+.ph i{font-style:normal;width:26px;height:26px;border-radius:50%;background:var(--br);color:var(--bi);display:grid;place-items:center;font-size:.85rem}
+.ind{border:1px solid var(--ln);border-radius:12px;margin:8px 0;background:var(--bg)}
+.ind.sk{display:flex;gap:12px;align-items:center;padding:10px 12px;opacity:.75}
+.ind summary{display:flex;align-items:center;gap:12px;padding:10px 12px;cursor:pointer;list-style:none}
+.ind summary::-webkit-details-marker{display:none}
+.bd2{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:var(--sf);border:1px solid var(--ln);flex:none}
+.bd2.ok{background:var(--okb)}.bd2.warn{background:var(--wnb)}.bd2.bad{background:var(--bdb)}
+.nm{flex:1;min-width:0;display:flex;flex-direction:column;line-height:1.3}
+.nm .mut{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:.88rem}
+.chip{font-size:.82rem;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--sf);border:1px solid var(--ln)}
+.rep{background:var(--bdb);border-radius:10px;padding:10px 12px;margin:0 12px 10px}
+.sig{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.ind .sig{margin:0 12px 12px}
+.ph+.sig,.lim+.sig{margin-bottom:12px}
+.sig li{padding:10px 12px 10px 14px;border-radius:10px;border-left:4px solid var(--ln);background:var(--bg)}
+.sig .bad{border-color:var(--bd);background:var(--bdb)}
+.sig .warn{border-color:var(--wn);background:var(--wnb)}
+.sig .ok{border-color:var(--ok);background:var(--okb)}
+.lim{font-size:.9rem;color:var(--mut);margin-top:12px}
+.pg{height:6px;border-radius:4px;background:var(--ln);overflow:hidden}
+.pg i{display:block;height:100%;width:0;background:var(--br);transition:width .3s}
+.mt{display:grid;gap:10px;margin:10px 0 18px}
+.lk{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.lk a{color:var(--br);font-weight:600;border:1px solid var(--ln);border-radius:10px;padding:8px 14px;text-decoration:none}
+.lk a:hover{border-color:var(--br)}
+.s{padding:60px 0 0}
+.steps{counter-reset:n;list-style:none;padding:0;margin:20px 0 0;display:grid;gap:16px}
+.steps li{counter-increment:n;display:grid;grid-template-columns:34px 1fr;gap:12px}
+.steps li::before{content:counter(n);width:30px;height:30px;border-radius:50%;background:var(--br);color:var(--bi);display:grid;place-items:center;font-weight:700;font-size:.9rem}
+.src{list-style:none;padding:0;margin:18px 0 0;border-top:1px solid var(--ln)}
+.src li{display:grid;grid-template-columns:240px 1fr;gap:6px 20px;padding:16px 0;border-bottom:1px solid var(--ln)}
+.src a{color:var(--br);font-weight:700;text-decoration:none}
+footer{max-width:980px;margin:64px auto 0;padding:24px 20px 40px;border-top:1px solid var(--ln);color:var(--mut);font-size:.9rem}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.mw{flex-direction:row-reverse;justify-content:flex-end;gap:14px}.m1{width:84px;flex:none}.say::after{display:none}.fg{grid-template-columns:1fr}.bn{grid-template-columns:1fr}.src li{grid-template-columns:1fr}nav a:not(:first-of-type){display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-gab" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5zM3 12.5l9 5 9-5M3 16.5l9 5 9-5"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></symbol>
+<symbol id="i-bank" viewBox="0 0 24 24"><path d="M3 10l9-6 9 6zM5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18"/></symbol>
+<symbol id="i-store" viewBox="0 0 24 24"><path d="M4 10v10h16V10M3 10l1.5-6h15L21 10a3 3 0 01-6 0 3 3 0 01-6 0 3 3 0 01-6 0zM10 20v-5h4v5"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1M14 10a4 4 0 00-5.7 0l-3 3a4 4 0 005.7 5.7l1-1"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17"/></symbol>
+</defs></svg>
+<div class="w">
+<header>
+<a class="brand" href="#periksa" aria-label="Pratanda"><svg viewBox="0 0 34 32" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 27V5h8.5a6.5 6.5 0 010 13H8"/><circle cx="16" cy="11.5" r="1.4" fill="currentColor" stroke="none"/><path d="M26.5 8.5c1.5 2.2 1.5 4.8 0 7M30.5 5.5c2.7 3.8 2.7 9.2 0 13" stroke-width="2.4"/></svg>Pratanda</a>
+<nav><a href="#lapor">Lapor</a><a href="#terlanjur">Sudah terlanjur?</a><a href="#sumber">Sumber</a><button class="tg" id="th" type="button" aria-label="Ganti tema terang atau gelap"><svg class="ic" aria-hidden="true"><use href="#i-sun"/></svg></button></nav>
+</header>
+<main>
+<section class="hero" id="periksa">
+<div><h1>Periksa dulu sebelum transfer, klik, atau percaya.</h1>
+<p class="lead">Kenali risikonya, sebelum bertransaksi. Isi data penjual sekaligus, lalu Pratanda menyusunnya menjadi satu laporan: cek, pahami, mitigasi.</p></div>
+<div class="mw"><div class="say" id="say" aria-live="polite"></div><div class="m1" id="m1"></div></div>
+</section>
+<div class="panel">
+<div class="tabs" id="tabs" role="tablist"></div>
+<form id="f"><div id="fields"></div>
+<div class="row"><button class="go">Periksa sekarang</button><div class="chips" id="chips"></div></div>
+<p class="note">Data diproses di peramban Anda dan tidak dikirim ke server mana pun.</p></form>
+<div id="out" aria-live="polite"></div>
+</div>
+<section class="s" id="lapor">
+<h2>Laporkan yang Anda temui</h2>
+<p class="mut" style="max-width:64ch">Laporan Anda ikut dihitung pada pemeriksaan berikutnya. Namun laporan di sini tersimpan di perangkat Anda dan belum dikirim ke database Pratanda, jadi ini bukan laporan resmi ke bank, IASC, atau polisi. Salah input? Hapus saja laporan Anda kapan pun.</p>
+<div class="panel" style="margin-top:16px"><form id="rf">
+<div class="fg"><div><label for="rt">Jenis</label><select id="rt"><option value="tel">Telepon</option><option value="rek">Rekening</option><option value="toko">Toko</option><option value="link">Tautan</option></select></div>
+<div><label for="rv">Nomor, rekening, nama toko, atau tautan</label><input id="rv" required autocomplete="off"></div>
+<div class="full"><label for="rs">Apa yang terjadi? (singkat)</label><textarea id="rs" maxlength="160" required></textarea></div></div>
+<div class="row"><button class="go">Simpan laporan</button><button class="gh" type="button" id="del">Hapus laporan saya</button><span id="rm" class="mut" aria-live="polite"></span></div>
+<p class="note" id="rc"></p>
+</form></div>
+</section>
+<section class="s" id="terlanjur">
+<h2>Jika sudah terlanjur transfer atau memberi data</h2>
+<p class="mut">Kecepatan menentukan. Lakukan berurutan:</p>
+<ol class="steps">
+<li><div><b>Hubungi bank atau penyedia e-wallet Anda</b><br><span class="mut">Minta transaksi ditahan dan rekening penerima diblokir.</span></div></li>
+<li><div><b>Simpan semua bukti</b><br><span class="mut">Tangkapan layar chat, bukti transfer, nomor rekening, nomor telepon, dan tautan.</span></div></li>
+<li><div><b>Laporkan ke IASC dan kepolisian</b><br><span class="mut">Lapor lewat iasc.ojk.go.id atau hubungi OJK 157 (WhatsApp 081-157-157-157). Semakin cepat dilaporkan, semakin besar peluang rekening pelaku diblokir.</span></div></li>
+<li><div><b>Amankan akun Anda</b><br><span class="mut">Ganti PIN dan kata sandi, lalu hapus aplikasi yang tidak Anda kenal dari ponsel.</span></div></li>
+</ol>
+</section>
+<section class="s" id="sumber">
+<h2>Sumber rujukan</h2>
+<p class="mut" style="max-width:62ch">Pratanda menyatukan cara memeriksa di satu tempat. Data resmi dan pelaporan tetap ada di tiga sumber ini.</p>
+<ul class="src">
+<li><a href="https://cekrekening.id" target="_blank" rel="noopener noreferrer">CekRekening.id</a><span class="mut">Periksa apakah suatu rekening pernah dilaporkan terkait penipuan.</span></li>
+<li><a href="https://ic4.id" target="_blank" rel="noopener noreferrer">IC4 Indonesia</a><span class="mut">Cek nomor telepon, rekening, tautan, pesan, dan berkas APK, serta kirim laporan kasus.</span></li>
+<li><a href="https://iasc.ojk.go.id" target="_blank" rel="noopener noreferrer">Indonesia Anti-Scam Centre (IASC)</a><span class="mut">Lapor segera setelah transfer agar rekening pelaku bisa diblokir. Laporan ke IASC hanya lewat iasc.ojk.go.id, jadi waspadai situs tiruan.</span></li>
+</ul>
+</section>
+</main>
+</div>
+<footer><b>Pratanda</b>: kenali risikonya, sebelum bertransaksi. Ini prototipe. Skor dihitung dari tanda-tanda umum dan data contoh, bukan putusan resmi. Untuk kepastian, gunakan CekRekening.id, IC4 Indonesia, dan Indonesia Anti-Scam Centre (IASC) OJK.</footer>
+<script>
+const $=s=>document.querySelector(s);
+const esc=x=>String(x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const A=(s,l,t)=>s.push([l,t]);
+const FD={rek:{i:'bank',n:'Rekening',l:'Rekening tujuan',p:'Nomor rekening atau e-wallet'},tel:{i:'phone',n:'Telepon',l:'Nomor kontak penjual',p:'Contoh: 0812 3456 7890'},toko:{i:'store',n:'Toko',l:'Nama toko atau akun',p:'Contoh: tokomurahbanget'},link:{i:'link',n:'Tautan',l:'Tautan toko atau pembayaran',p:'Tempel tautan di sini'},pesan:{i:'chat',n:'Pesan',l:'Pesan dari penjual',p:'Tempel pesan atau chat'}};
+const T={
+gab:{n:'Cek gabungan',i:'gab',f:['rek','tel','toko','link','pesan'],x:[['Contoh: penjual meragukan',{rek:'0000000001',tel:'081200000001',toko:'tokomurahbanget',link:'bit.ly/promo-murah77',pesan:'Stok tinggal 1, transfer hari ini juga ya kak. Pesan lewat WA saja.',c:[0,1,2,3]}],['Contoh: tampak wajar',{rek:'1234567891',tel:'081311112222',toko:'tokobukulestari',link:'https://www.tokopedia.com',pesan:''}]]},
+tel:{n:'Telepon',i:'phone',f:['tel'],x:[['Nomor yang dilaporkan',{tel:'081200000001'}],['Nomor luar negeri',{tel:'+855 12 345 678'}]]},
+rek:{n:'Rekening',i:'bank',f:['rek'],x:[['Rekening yang dilaporkan',{rek:'0000000001'}],['Angka berurutan',{rek:'1234567890'}]]},
+toko:{n:'Toko online',i:'store',f:['toko'],x:[['Toko yang dilaporkan',{toko:'tokomurahbanget'}]]},
+link:{n:'Tautan',i:'link',f:['link'],x:[['Meniru bank',{link:'klikbca-verifikasi.xyz'}],['Situs resmi',{link:'https://www.bca.co.id'}]]},
+pesan:{n:'Pesan',i:'chat',f:['pesan'],x:[['Pesan “paket tertahan”',{pesan:'Paket Anda tertahan. Klik http://bit.ly/x7 lalu pasang aplikasi kurir.apk sekarang juga, batas waktu 24 jam atau paket dikembalikan.'}]]}};
+const CR=['CekRekening.id','https://cekrekening.id'],IC=['IC4 Indonesia','https://ic4.id'],IA=['IASC OJK','https://iasc.ojk.go.id'];
+const LK={gab:[CR,IC,IA],tel:[IC,IA],rek:[CR,IC,IA],toko:[CR,IC,IA],link:[IC],pesan:[IC,IA]};
+const BK={'BCA':[10],'Mandiri':[13,10],'BRI':[15],'BNI':[10],'BSI':[10],'CIMB Niaga':[13],'Jago':[12],'SeaBank':[12],'E-wallet (DANA, OVO, GoPay)':[10,11,12,13],'Bank lain':[]};
+const CK=[['Harga jauh di bawah harga pasaran',20],['Diminta transfer ke rekening pribadi, bukan lewat platform',25],['Diajak pindah chat ke WhatsApp atau Telegram',15],['Mendesak (“stok tinggal satu”, “bayar hari ini”)',12],['Akun baru, ulasan sedikit atau terlalu seragam',14],['Tidak ada alamat atau kontak yang jelas, tidak bisa COD',14]];
+const BR={bca:['bca.co.id','klikbca.com'],bri:['bri.co.id'],bni:['bni.co.id'],mandiri:['bankmandiri.co.id'],dana:['dana.id'],shopee:['shopee.co.id','shopee.com'],tokopedia:['tokopedia.com'],gopay:['gopay.co.id','gojek.com'],jne:['jne.co.id'],pln:['pln.co.id']};
+const KW=[
+[/\botp\b|kode (verifikasi|rahasia)|\bpin\b/i,30,'Meminta kode OTP atau PIN. Pihak resmi tidak pernah meminta ini.'],
+[/\.apk|pasang aplikasi|install|unduh aplikasi/i,35,'Meminta memasang aplikasi dari luar toko resmi (modus APK).'],
+[/segera|sekarang juga|hari ini juga|batas waktu|dalam \d+ (jam|menit)/i,15,'Mendesak dan memberi tenggat singkat agar Anda tidak sempat berpikir.'],
+[/hadiah|undian|menang|selamat anda|gratis/i,20,'Menjanjikan hadiah atau undian.'],
+[/blokir|dibekukan|ditangguhkan|denda|tilang/i,20,'Mengancam akun diblokir atau memberi denda.'],
+[/paket|kurir|resi/i,15,'Pola “paket tertahan” yang sering dipakai untuk menyebar tautan palsu.'],
+[/transfer|kirim (uang|dana)|rekening|pulsa/i,15,'Meminta uang, pulsa, atau data rekening.'],
+[/untung|profit|passive income|investasi|deposit|member vip|tugas.*komisi/i,20,'Janji keuntungan cepat, mirip pola investasi atau tugas berbayar.'],
+[/https?:\/\/|bit\.ly|wa\.me|t\.me/i,10,'Memuat tautan. Periksa dulu di tab Tautan.'],
+[/ini (mama|papa|ibu|bapak)|nomor baru|ganti nomor/i,20,'Mengaku keluarga yang berganti nomor.']];
+let R=[['tel','081200000001',14,'Mengaku kurir, meminta memasang berkas APK'],['tel','081200000002',6,'Mengaku petugas bank, meminta kode OTP'],['rek','0000000001',9,'Penjual fiktif, barang tidak pernah dikirim'],['rek','0000000002',3,'Ajakan investasi “pasti untung”'],['toko','tokomurahbanget',11,'Harga jauh di bawah pasaran, barang tidak dikirim'],['link','klikbca-verifikasi.xyz',7,'Meniru halaman login bank']].map(([t,k,n,s])=>({t,k,n,s,demo:1}));
+let MY=[];try{MY=JSON.parse(localStorage.getItem('pratanda-lap')||'[]')}catch(e){}
+const F=(t,k)=>{const d=R.find(r=>r.t==t&&r.k==k),u=MY.filter(r=>r.t==t&&r.k==k);return d||u.length?{n:(d?d.n:0)+u.length,s:u.length?u[u.length-1].s:d.s,demo:!!d,mine:u.length}:0};
+const host=u=>{try{return new URL(/^https?:\/\//i.test(u)?u:'http://'+u).hostname.toLowerCase().replace(/^www\./,'')}catch(e){return ''}};
+const nk=(t,v)=>t=='tel'?v.replace(/[^\d+]/g,'').replace(/^\+?62/,'0'):t=='rek'?v.replace(/\D/g,''):t=='toko'?v.toLowerCase().replace(/^https?:\/\/(www\.)?/,'').replace(/\s+/g,'').replace(/\/+$/,''):host(v);
+function cTel(v){const k=nk('tel',v),s=[];let sc=0;
+if(k[0]=='+'){sc+=35;A(s,'warn','Memakai kode negara asing ('+k.slice(0,4)+'). Penipuan lewat WhatsApp sering memakai nomor luar negeri.')}
+else if(/^08\d{8,11}$/.test(k))A(s,'ok','Format sesuai nomor seluler Indonesia.');
+else{sc+=25;A(s,'warn','Format tidak lazim untuk nomor seluler Indonesia (08xx, total 10 sampai 13 digit).')}
+if(/(\d)\1{5,}/.test(k)){sc+=10;A(s,'warn','Ada deretan angka kembar yang panjang.')}
+return{k,sc,s}}
+function cRek(v,b){const k=nk('rek',v),s=[],L=BK[b]||[];let sc=0;
+if(k.length<6){sc+=30;A(s,'warn','Nomor terlalu pendek untuk sebuah rekening.')}
+else if(L.length&&!L.includes(k.length)){sc+=20;A(s,'warn','Panjang '+k.length+' digit tidak lazim untuk '+b+' (umumnya '+L.join(' atau ')+' digit). Periksa lagi nomornya.')}
+else A(s,'ok','Panjang nomor wajar'+(L.length?' untuk '+b:'')+'.');
+if(k.length>5&&(/(\d)\1{5,}/.test(k)||'01234567890123456789'.includes(k))){sc+=10;A(s,'warn','Pola angkanya terlalu rapi (kembar atau berurutan).')}
+A(s,'info','Cocokkan nama penerima yang tampil di aplikasi bank dengan nama penjual sebelum mentransfer.');
+return{k,sc,s}}
+function cLink(v){const u=v.trim(),h=host(u),s=[];let sc=0;
+if(!h||!h.includes('.'))return{k:h,sc:20,s:[['warn','Tautan tidak terbaca. Periksa penulisannya.']]};
+if(/^http:/i.test(u)){sc+=10;A(s,'warn','Memakai http tanpa enkripsi.')}
+if(/^\d+(\.\d+){3}$/.test(h)){sc+=35;A(s,'bad','Alamat berupa angka IP, bukan nama situs.')}
+if(/^(bit\.ly|tinyurl\.com|s\.id|cutt\.ly|t\.co|rb\.gy|shorturl\.at)$/.test(h)){sc+=25;A(s,'warn','Tautan dipendekkan sehingga tujuan aslinya tersembunyi.')}
+const tl=h.split('.').pop();
+if(/^(xyz|top|click|icu|site|online|cfd|sbs|shop|live|vip|buzz|cc)$/.test(tl)){sc+=20;A(s,'warn','Akhiran .'+tl+' murah dan sering dipakai situs sekali pakai.')}
+if(u.includes('@')){sc+=25;A(s,'bad','Mengandung tanda @ yang bisa mengalihkan ke situs lain.')}
+if(/\.apk(\?|$)/i.test(u)){sc+=45;A(s,'bad','Mengarah ke berkas .apk. Jangan pasang aplikasi dari luar toko aplikasi resmi.')}
+if((h.match(/-/g)||[]).length>1){sc+=10;A(s,'warn','Banyak tanda hubung pada nama situs.')}
+if(/(login|verifikasi|verify|hadiah|undian|gratis|klaim|blokir|update|bansos)/.test(h)){sc+=15;A(s,'warn','Nama situs memuat kata pemancing seperti login, verifikasi, atau hadiah.')}
+for(const b in BR){if(new RegExp('(^|[.-])(klik|m|my)?'+b+'([.-]|\\d|$)').test(h)&&!BR[b].some(o=>h==o||h.endsWith('.'+o))){sc+=40;A(s,'bad','Memakai nama “'+b+'” tetapi bukan domain resminya ('+BR[b][0]+').');break}}
+if(!s.length)A(s,'ok','Penulisan alamat tidak menunjukkan tanda mencurigakan. Ini belum menjamin situsnya aman.');
+return{k:h,sc,s}}
+function cToko(v,c){const k=nk('toko',v),s=[];let sc=0;
+c.forEach(i=>{sc+=CK[i][1];A(s,CK[i][1]>=20?'bad':'warn',CK[i][0]+'.')});
+if(v.includes('.')&&!/\s/.test(v.trim())){const l=cLink(v);sc+=Math.round(l.sc*.6);s.push(...l.s)}
+if(!c.length)A(s,'info','Belum ada ciri yang dicentang. Centang ciri yang Anda temukan agar hasilnya lebih tepat.');
+return{k,sc,s}}
+function cPesan(v){const s=[];let sc=0;
+KW.forEach(([r,w,t])=>{if(r.test(v)){sc+=w;A(s,w>=25?'bad':'warn',t)}});
+if(!s.length)A(s,'ok','Tidak ada pola penipuan umum yang terdeteksi. Tetap berhati-hati bila pengirimnya tidak dikenal.');
+return{k:'',sc,s}}
+let cur='gab',st='idle',tm,ty,LAST=[];
+const IDLE='Halo, saya Tanda. Tempel data penjual, saya periksa dulu.';
+const ico=n=>`<svg class="ic" aria-hidden="true"><use href="#i-${n}"/></svg>`;
+const MAS=`<svg class="mas s-idle" viewBox="0 0 120 124" aria-hidden="true"><g class="sw"><path d="M60 64V16A48 48 0 01104 44z"/></g><circle class="rg" cx="60" cy="64" r="49"/><path class="an" d="M60 28V17"/><circle class="led" cx="60" cy="12" r="5"/><circle class="bd0" cx="60" cy="64" r="37"/><rect class="scr" x="32" y="38" width="56" height="46" rx="15"/><g class="eyes"><g class="eye"><ellipse class="e" cx="47" cy="61" rx="6" ry="8"/></g><g class="eye"><ellipse class="e" cx="73" cy="61" rx="6" ry="8"/></g></g><path class="brow" d="M38 49l11-4M82 49L71 45"/><path class="mo" d="M49 75q11 8 22 0"/></svg>`;
+const MO={idle:'M49 75q11 8 22 0',type:'M51 77h18',scan:'M51 77h18',ok:'M47 73q13 13 26 0',warn:'M50 79q10-6 20 0',bad:'M49 81q11-12 22 0'};
+const SAY={ok:'Belum ada tanda bahaya. Tetap cocokkan nama penerima ya.',warn:'Ada yang janggal. Tahan dulu transfernya.',bad:'Berhenti dulu. Jangan transfer sebelum diverifikasi.'};
+const VT={ok:'Indikasi rendah',warn:'Perlu diwaspadai',bad:'Indikasi risiko tinggi'};
+const LB={ok:'Rendah',warn:'Waspada',bad:'Tinggi'};
+const MT={ok:['Cocokkan nama penerima di aplikasi bank dengan nama penjual.','Simpan bukti chat dan bukti transfer.','Untuk kepastian, cek ulang di CekRekening.id atau IC4.'],warn:['Tahan transfer sampai penjual membuktikan identitasnya (video singkat produk, alamat jelas).','Pakai rekening bersama (rekber), platform resmi, atau COD.','Cocokkan nama penerima dengan nama toko atau penjual.','Cek ulang di CekRekening.id dan IC4.'],bad:['Jangan transfer, dan jangan kirim kode OTP, PIN, atau data pribadi.','Hentikan percakapan. Jangan klik tautan atau pasang berkas yang dikirim.','Cek ulang di CekRekening.id dan IC4 untuk memastikan.','Laporkan di Pratanda, dan ke IASC bila Anda sudah terlanjur transfer.']};
+const lv=n=>n<25?'ok':n<55?'warn':'bad';
+const say=t=>{$('#say').textContent=t};
+function ms(s){st=s;document.querySelectorAll('.mas').forEach(m=>{m.setAttribute('class','mas s-'+s);m.querySelector('.mo').setAttribute('d',MO[s])})}
+function fld(k){const d=FD[k],id='q-'+k,inp=k=='pesan'?`<textarea id="${id}" placeholder="${d.p}"></textarea>`:`<input id="${id}" placeholder="${d.p}" autocomplete="off"${k=='tel'?' inputmode="tel"':k=='rek'?' inputmode="numeric"':''}>`;
+return `<div${k=='pesan'||cur!='gab'?' class="full"':''}><label for="${id}">${ico(d.i)}${d.l}</label>${k=='rek'?`<div class="bn"><select id="bank" aria-label="Bank">${Object.keys(BK).map(b=>`<option>${b}</option>`).join('')}</select>${inp}</div>`:inp}</div>`}
+function view(){const c=T[cur];
+$('#tabs').innerHTML=Object.entries(T).map(([k,v])=>`<button type="button" role="tab" aria-selected="${k==cur}" data-t="${k}">${ico(v.i)}${v.n}</button>`).join('');
+$('#fields').innerHTML=`<div class="fg">${c.f.map(k=>fld(k)).join('')}</div>`+(c.f.includes('toko')?`<details class="dt"${cur=='toko'?' open':''}><summary>Ciri yang Anda temukan pada penjual (opsional)</summary><div class="chk">${CK.map((x,i)=>`<label><input type="checkbox" value="${i}">${x[0]}</label>`).join('')}</div></details>`:'');
+$('#chips').innerHTML='<span>Coba contoh:</span>'+c.x.map(([l],i)=>`<button type="button" data-i="${i}">${l}</button>`).join('');
+$('#out').innerHTML='';ms('idle');say(IDLE)}
+function fill(o){T[cur].f.forEach(k=>{$('#q-'+k).value=o[k]||''});const c=o.c||[];document.querySelectorAll('.chk input').forEach(i=>i.checked=c.includes(+i.value));const d=$('.dt');if(d&&c.length)d.open=true}
+const sig=([t,x])=>`<li class="${t}">${esc(x)}</li>`;
+const ind=x=>x.sk?`<div class="ind sk"><span class="bd2">${ico(x.i)}</span><span class="nm"><b>${x.n}</b><span class="mut">Tidak diisi, jadi tidak diperiksa</span></span></div>`:`<details class="ind"${x.sc>=25?' open':''}><summary><span class="bd2 ${lv(x.sc)}">${ico(x.i)}</span><span class="nm"><b>${x.n}</b><span class="mut">${esc(x.v)}</span></span><span class="chip ${lv(x.sc)}">${LB[lv(x.sc)]}</span></summary>${x.m?`<div class="rep"><b>${x.m.n} laporan</b> pada Pratanda${x.m.demo?' (data contoh)':''}${x.m.mine?', termasuk '+x.m.mine+' dari Anda':''}. ${esc(x.m.s||'')}</div>`:''}<ul class="sig">${x.s.map(sig).join('')}</ul></details>`;
+function run(){
+const c=T[cur],V=k=>(($('#q-'+k)||{}).value||'').trim(),ck=[...document.querySelectorAll('.chk input:checked')].map(i=>+i.value),I=[];
+if(!c.f.some(k=>V(k))&&!ck.length){$('#q-'+c.f[0]).focus();say('Isi dulu data yang mau diperiksa, ya.');return}
+c.f.forEach(k=>{const v=V(k),d=FD[k];
+if(!v&&!(k=='toko'&&ck.length)){if(cur=='gab')I.push({k,i:d.i,n:d.n,sk:1});return}
+const r=k=='tel'?cTel(v):k=='rek'?cRek(v,$('#bank').value):k=='toko'?cToko(v,ck):k=='link'?cLink(v):cPesan(v),m=k=='pesan'||!r.k?0:F(k,r.k);
+I.push({k,i:d.i,n:d.n,raw:v,v:k=='rek'?$('#bank').value+' '+v:k=='pesan'?v.slice(0,48)+(v.length>48?'…':''):v||'Ciri yang dicentang',s:r.s,m,sc:Math.min(100,m?Math.max(r.sc,55)+Math.min(40,m.n*3):r.sc)})});
+LAST=I;ms('scan');say('Sebentar, saya periksa…');
+$('#out').innerHTML='<p class="mut" style="margin:0">Mencocokkan dengan data dan pola…</p>';
+clearTimeout(tm);tm=setTimeout(()=>show(I),matchMedia('(prefers-reduced-motion:reduce)').matches?0:850)}
+function show(I){
+const A2=I.filter(x=>!x.sk),S=A2.map(x=>x.sc).sort((a,b)=>b-a),sc=Math.min(100,Math.round(S[0]+.3*S.slice(1).reduce((a,b)=>a+b,0))),l=lv(sc),rs=[];
+A2.forEach(x=>{if(x.m)rs.push(['bad',x.n+': '+x.m.n+' laporan pada Pratanda'+(x.m.demo?' (data contoh)':'')+'.']);x.s.forEach(([t,m])=>{if(t=='bad'||t=='warn')rs.push([t,x.n+': '+m])})});
+rs.sort((a,b)=>(b[0]=='bad')-(a[0]=='bad'));
+if(A2.filter(x=>x.sc>=25).length>1)rs.unshift(['warn','Beberapa indikator bermasalah sekaligus. Kombinasi ini lebih berbahaya daripada satu tanda tunggal.']);
+const skip=I.filter(x=>x.sk).map(x=>x.n),hit=A2.some(x=>x.m),now=new Date().toLocaleString('id-ID',{dateStyle:'medium',timeStyle:'short'});
+$('#out').innerHTML=`<div class="rh"><div id="m2"></div><div><p class="lv ${l}">${VT[l]}</p><p class="mut" style="margin:0">Skor <b id="sn">0</b> dari 100. ${l=='ok'?'Hasil rendah bukan jaminan aman.':'Jangan transfer atau mengirim data sebelum memastikan lewat sumber resmi.'}</p></div></div>
+<div class="bar"><i></i></div><div class="ends"><span>Aman</span><span>Waspada</span><span>Risiko tinggi</span></div>
+<h3 class="ph"><i>1</i>Cek</h3>${I.map(ind).join('')}
+<h3 class="ph"><i>2</i>Pahami</h3>
+<ul class="sig">${(rs.length?rs.slice(0,5):[['ok','Tidak ada tanda yang menonjol pada data yang Anda isi.']]).map(sig).join('')}</ul>
+<p class="lim"><b>Batas pemeriksaan.</b> Sumber: data contoh Pratanda (diperbarui 4 Nov 2026) dan aturan pola, diperiksa ${now}. Belum terhubung langsung ke CekRekening.id, IC4, atau IASC.${skip.length?' Tidak diperiksa: '+skip.join(', ')+'.':''}${hit?'':' Tidak ditemukan laporan pada sumber yang diperiksa. Hal ini bukan jaminan bahwa rekening atau penjual tersebut aman.'}</p>
+<h3 class="ph"><i>3</i>Mitigasi</h3>
+<div class="pg"><i id="pgi"></i></div><p class="mut" id="pgt" style="margin-top:8px">0 dari ${MT[l].length} langkah selesai</p>
+<div class="mt">${MT[l].map(x=>`<label><input type="checkbox">${x}</label>`).join('')}</div>
+<div class="lk">${LK[cur].map(([n,u])=>`<a href="${u}" target="_blank" rel="noopener noreferrer">${n}</a>`).join('')}<button type="button" class="gh" id="rp">Laporkan ke Pratanda</button></div>`;
+$('#m2').innerHTML=MAS;ms(l);say(SAY[l]);
+const sn=$('#sn');let t0;const stp=t=>{t0=t0||t;const p=Math.min(1,(t-t0)/900);sn.textContent=Math.round(sc*p);if(p<1)requestAnimationFrame(stp)};requestAnimationFrame(stp);
+requestAnimationFrame(()=>requestAnimationFrame(()=>{const i=$('#out .bar i');if(i)i.style.left=sc+'%'}))}
+$('#tabs').onclick=e=>{const b=e.target.closest('button');if(b){cur=b.dataset.t;view()}};
+$('#chips').onclick=e=>{const b=e.target.closest('button');if(b){fill(T[cur].x[+b.dataset.i][1]);run()}};
+$('#f').onsubmit=e=>{e.preventDefault();run()};
+$('#fields').oninput=()=>{if(st!='type'){ms('type');say('Oke, saya baca sambil Anda mengetik.')}clearTimeout(ty);ty=setTimeout(()=>{if(st=='type'){ms('idle');say(IDLE)}},2500)};
+$('#out').onchange=e=>{if(!e.target.closest('.mt'))return;const a=[...document.querySelectorAll('.mt input')],n=a.filter(i=>i.checked).length;$('#pgi').style.width=n/a.length*100+'%';$('#pgt').textContent=n+' dari '+a.length+' langkah selesai'+(n==a.length?'. Celah yang paling umum sudah Anda tutup.':'')};
+$('#out').onclick=e=>{if(e.target.id!='rp')return;const x=LAST.find(i=>!i.sk&&i.sc>=25&&i.k!='pesan')||LAST.find(i=>!i.sk&&i.k!='pesan');if(x){$('#rt').value=x.k;$('#rv').value=x.raw}$('#lapor').scrollIntoView({behavior:'smooth'})};
+$('#th').onclick=()=>{const d=document.documentElement,dk=d.dataset.theme?d.dataset.theme=='dark':matchMedia('(prefers-color-scheme:dark)').matches;d.dataset.theme=dk?'light':'dark'};
+addEventListener('pointermove',e=>{if(st=='type')return;document.querySelectorAll('.mas').forEach(m=>{const r=m.getBoundingClientRect(),dx=e.clientX-r.left-r.width/2,dy=e.clientY-r.top-r.height/2,d=Math.hypot(dx,dy)||1,k=Math.min(1,d/200)*3.5;m.style.setProperty('--ex',dx/d*k+'px');m.style.setProperty('--ey',dy/d*k+'px')})});
+const sv=()=>{try{localStorage.setItem('pratanda-lap',JSON.stringify(MY))}catch(e){}};
+const cnt=()=>{$('#rc').textContent=MY.length?MY.length+' laporan tersimpan di perangkat ini.':''};
+$('#rf').onsubmit=e=>{e.preventDefault();const t=$('#rt').value,k=nk(t,$('#rv').value),s=$('#rs').value.trim();if(!k){$('#rm').textContent='Isi data yang valid terlebih dahulu.';return}
+MY.push({t,k,s});sv();e.target.reset();cnt();$('#rm').textContent='Laporan tersimpan di perangkat Anda dan belum dikirim ke database Pratanda.'};
+$('#del').onclick=()=>{MY=[];sv();cnt();$('#rm').textContent='Semua laporan Anda di perangkat ini sudah dihapus.'};
+$('#m1').innerHTML=MAS;view();cnt();
+</script>
+</body>
+</html>
